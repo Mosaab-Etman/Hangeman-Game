@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Hangman Game</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <div class="gameContainer">
+            <div class="upperBar">
+                <p class='title'>Hangman</p>
+                <p class='category'>Word from:</p>
+            </div>
+            <div class="gameBody">
+                <div class="drawSection">
+                    <div class="draw wrong-1">
+                        <div class="draw-stand wrong-2"></div>
+                        <div class="draw-hang  wrong-3"></div>
+                        <div class="draw-rope wrong-4"></div>
+                        <div class="draw-human-head wrong-5"></div>
+                        <div class="draw-human-body wrong-6"></div>
+                        <div class="draw-human-hands wrong-7"></div>
+                        <div class="draw-human-legs wrong-8"></div>
+                    </div>
+                </div>
+                <div class="lettersSection">
+
+                </div>
+            </div>
+            <div class="word-guess">
+
+            </div>
+            <div class="gameOver">
+                <h1>Game Over</h1>
+                <p>The word is: Obama</p>
+                <button class='again'>Play Again</button>
+            </div>
+            <div class="winning">
+                <p>You Won</p>
+                <button class='again'>Play Again</button> 
+            </div>
+        </div>
+        <audio src='Sounds/Error.mp3' class='fail' reload></audio>
+        <audio src='Sounds/Success.mp3' class='success'></audio>
+        <script src='main.js'></script>
+    </body>
+</html>
